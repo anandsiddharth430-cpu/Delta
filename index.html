@@ -3,26 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <title>Delta TeraBox Tool</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>My Website</h1>
-    <p>Welcome to my first GitHub Pages website.</p>
+    <h1>Delta</h1>
+    <p>TeraBox Link Tool</p>
   </header>
 
   <main>
     <section class="card">
-      <h2>Hello 👋</h2>
-      <p>This website is hosted for free using GitHub Pages.</p>
-      <button id="btn">Click Me</button>
-      <p id="message"></p>
+      <h2>Enter TeraBox Link</h2>
+      <p>Paste your TeraBox link below.</p>
+
+      <input id="urlInput" type="url"
+        placeholder="Paste TeraBox link here..." autocomplete="off">
+
+      <button id="processBtn">Process Link</button>
+
+      <p id="status"></p>
+      <div id="result" class="result" hidden></div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 My Website</p>
+    <p>© 2026 Delta</p>
   </footer>
 
   <script src="script.js"></script>
